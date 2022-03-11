@@ -13,7 +13,6 @@ const useCall = (name) => {
         .get(`https://api.factoryfour.com/${name}/health/status`)
         .then((res) => {
           setInfo(res.data);
-          console.log(res.data);
         });
     }
   }, [name, counter]);
